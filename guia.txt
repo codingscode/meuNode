@@ -13,11 +13,13 @@ https://links.mead.io/nodecourse
 no terminal:
    npm init
    npm i validator
+   npm i chalk
+   
 
 
 https://www.npmjs.com/package/validator
 
-
+https://www.npmjs.com/package/chalk
    
 
 

@@ -2,13 +2,15 @@
   "name": "nodelearning",
   "version": "1.0.0",
   "description": "",
-  "main": "file001.js",
+  "main": "file002.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.0.0",
     "validator": "^13.7.0"
   }
 }
