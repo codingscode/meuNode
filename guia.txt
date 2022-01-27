@@ -10,11 +10,15 @@ https://nodejs.org/dist/latest-v16.x/docs/api/
 https://links.mead.io/nodecourse
 
 
+no terminal:
+   npm init
+   npm i validator
 
 
+https://www.npmjs.com/package/validator
 
 
-
+   
 
 
 
