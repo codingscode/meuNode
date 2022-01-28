@@ -1,8 +1,10 @@
 
 
-const validador = require('validator')
+//const validador = require('validator')
 
+import validador from 'validator'
 
+console.log('---------------------')
 console.log(validador.isEmail('aladin@gmail.com'))
 console.log(validador.isEmail('zacarias123'))
 console.log(validador.isURL('https://mead.io'))

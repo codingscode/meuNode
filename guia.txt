@@ -21,9 +21,15 @@ https://www.npmjs.com/package/validator
 
 https://www.npmjs.com/package/chalk
    
+https://www.npmjs.com/package/nodemon
+   npm i nodemon
+   nodemon -v
+   npm install --save-dev nodemon   
 
 
+em package.json -> ficar trocando o nome do arquivo na linha "main": "file001.js",
 
+no terminal -> npm start
 
 
 

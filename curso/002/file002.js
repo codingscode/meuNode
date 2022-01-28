@@ -1,6 +1,6 @@
 import os from 'os' //  const os = require("os")
 
-import chalk from 'chalk'//const chalk = require("chalk")
+import chalk from 'chalk'  //const chalk = require("chalk")
 
 
 const mensagemVerde = chalk.bold.magenta('Sucesso!')
