@@ -46,7 +46,11 @@ node file003.js aladin
 """
 
 
+https://www.npmjs.com/package/yargs
+   npm i yargs
 
+tirei 
+"type": "module",
 
 
 
