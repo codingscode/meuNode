@@ -32,7 +32,18 @@ em package.json -> ficar trocando o nome do arquivo na linha "main": "file001.js
 no terminal -> npm start
 
 
+node file002.js aladin
 
+
+
+node file003.js aladin
+"""
+[
+  '/home/misterhp/apps/node/node16/bin/node',
+  '/home/misterhp/Programacao/Curso Node/meuNode/curso/002/file003.js',
+  'aladin'
+]
+"""
 
 
 

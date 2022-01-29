@@ -9,7 +9,3 @@ console.log(mensagemVerde)
 console.log(chalk.blue.bold('Sucesso outro!'))
 console.log(chalk.blue.inverse.bold('Sucesso outro!'))
 
-
-
-
-

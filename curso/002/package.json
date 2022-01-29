@@ -2,7 +2,7 @@
   "name": "nodelearning",
   "version": "1.0.0",
   "description": "",
-  "main": "file001.js",
+  "main": "file002.js",
   "type": "module",
   "scripts": { "start": "nodemon index.js" },
   "author": "",
