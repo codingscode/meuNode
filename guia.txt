@@ -53,7 +53,10 @@ tirei
 "type": "module",
 
 
-
+ver site:
+links.mead.io/json-sample
+   https://gist.github.com/andrewjmead/c7d26a25ddc793f4210201747a9ba429
+   
 
 
 
