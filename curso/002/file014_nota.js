@@ -28,6 +28,17 @@ const adicionarNota = (titulo, corpo) => {
    salvarNotas(notas)
 }
 
+const removerNota = (titulo) => {
+
+   const notas = carregarNotas()
+   const notasAManter = notas.filter((nota) => {
+      return nota.titulo !== titulo
+   })
+
+   salvarNotas(notasAManter)
+}
+
+
 const salvarNotas = (notas) => {
    const dadosJSON = JSON.stringify(notas)
    fs.writeFileSync('file014notas.json', dadosJSON)
@@ -50,5 +61,5 @@ const carregarNotas = () => {
 
 
 
-module.exports = { acessarNotas: acessarNotas, adicionarNota: adicionarNota }
+module.exports = { acessarNotas: acessarNotas, adicionarNota: adicionarNota, removerNota: removerNota }
 

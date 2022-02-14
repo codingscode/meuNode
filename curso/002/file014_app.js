@@ -38,6 +38,22 @@ yargs.command({
    }
 })
 
+// comando remover
+yargs.command({
+   command: 'remover',
+   describe: 'Remover suas notas',
+   builder: {
+      titulo: {
+         describe: 'Nota titulo',
+         demandOption: true,
+         type: 'string'
+      }
+   },
+   handler: (argv) => {
+      notas.removerNota(argv.titulo)
+   }
+})
+
 
 // adicionar, remover, ler, listar
 
@@ -57,15 +73,18 @@ yargs.parse()
 
 */
 
-// node file014_app.js listar --titulo="comida" --corpo="hamburguer"
+// node file014_app.js remover --titulo="algum titulo"
+/* 
+[
+  '/home/misterhp/apps/node/node16/bin/node',
+  '/home/misterhp/Programacao/Curso Node/meuNode/curso/002/file014_app.js',
+  'remover',
+  '--titulo=algum titulo'
+]
+algum titulo
+*/
 
-// comando repetido node file014_app.js listar --titulo="comida" --corpo="hamburguer"
-
-// comando nao repetido node file014_app.js listar --titulo="eletronicos" --corpo="pendrive"
-
-
-
-
+// node file014_app.js remover --titulo="t"
 
 
 
