@@ -63,8 +63,11 @@ yargs.parse()
 arquivo file013notas.json criado
 */
 
+// node file013_app.js listar --titulo="comida" --corpo="hamburguer"
 
+// comando repetido node file013_app.js listar --titulo="comida" --corpo="hamburguer"
 
+// comando nao repetido node file013_app.js listar --titulo="eletronicos" --corpo="pendrive"
 
 
 

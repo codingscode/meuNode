@@ -10,7 +10,20 @@ const adicionarNota = (titulo, corpo) => {
 
    const notas = carregarNotas()
    
-   notas.push({ titulo: titulo, corpo: corpo })
+   const notasDuplicadas = notas.filter((nota) => {
+      return nota.titulo === titulo
+   })
+   
+   if (notasDuplicadas.length === 0) {
+      notas.push({ titulo: titulo, corpo: corpo })
+      
+      console.log('nova nota adicionada!')
+   }
+   else {
+      console.log('Nota titulo ocupada!')
+   }
+   
+   
    
    salvarNotas(notas)
 }
