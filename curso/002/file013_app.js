@@ -52,5 +52,25 @@ yargs.parse()
 
 
 // node file013_app.js listar --titulo="t" --corpo="c"
+/* 
+[
+   '/home/misterhp/apps/node/node16/bin/node',
+   '/home/misterhp/Programacao/Curso Node/meuNode/curso/002/file013_app.js',
+   'listar',
+   '--titulo=t',
+   '--corpo=c'
+]
+arquivo file013notas.json criado
+*/
+
+
+
+
+
+
+
+
+
+
 
 
