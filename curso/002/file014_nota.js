@@ -1,5 +1,8 @@
 
+//import chalk from 'chalk'
+const chalk = require('chalk')
 const fs = require('fs')
+
 
 
 const acessarNotas = () => {
@@ -34,8 +37,15 @@ const removerNota = (titulo) => {
    const notasAManter = notas.filter((nota) => {
       return nota.titulo !== titulo
    })
-
-   salvarNotas(notasAManter)
+   
+   if (notas.length > notasAManter.length) {
+      console.log(chalk.green.inverse('Nota removida!'))
+      salvarNotas(notasAManter)
+   }
+   else {
+      console.log(chalk.red.inverse('Nenhuma nota removida!'))
+   }
+   
 }
 
 

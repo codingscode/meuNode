@@ -87,6 +87,15 @@ algum titulo
 // node file014_app.js remover --titulo="t"
 
 
-
+// node file014_app.js remover --titulo="t"
+/* 
+[
+  '/home/misterhp/apps/node/node16/bin/node',
+  '/home/misterhp/Programacao/Curso Node/meuNode/curso/002/file014_app.js',
+  'remover',
+  '--titulo=t'
+]
+Nenhuma nota removida!
+*/
 
 
