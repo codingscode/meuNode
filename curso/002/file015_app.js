@@ -8,10 +8,10 @@ const yargs = require('yargs')
 // customizar yargs
 yargs.version('1.1.0')
 
-// criar comando listar
+// criar comando adicionar
 yargs.command({
-   command: 'listar',
-   describe: 'Listar suas notas',
+   command: 'adicionar',
+   describe: 'Adicionar um nota nova',
    builder: {
       titulo: {
          describe: 'Titulo da nota',
@@ -26,6 +26,16 @@ yargs.command({
    },
    handler(argv) {
       notas.adicionarNota(argv.titulo, argv.corpo)
+   }
+})
+
+
+// criar comando listar
+yargs.command({
+   command: 'listar',
+   describe: 'Listar suas notas',
+   handler() {
+      notas.listarNotas()
    }
 })
 
@@ -67,7 +77,7 @@ yargs.parse()
 //console.log(yargs.argv)
 
 
-// node file015_app.js remover --titulo="algum titulo"
+// node file015_app.js listar
 /* 
 
 

@@ -46,6 +46,15 @@ const removerNota = (titulo) => {
    
 }
 
+const listarNotas = () => {
+   const notas = carregarNotas()
+   
+   console.log(chalk.inverse('Suas notas'))
+   notas.forEach( (cada) => {
+      console.log(cada.titulo)
+   } )
+}
+
 
 const salvarNotas = (notas) => {
    const dadosJSON = JSON.stringify(notas)
@@ -69,6 +78,7 @@ const carregarNotas = () => {
 
 
 
-module.exports = { acessarNotas: acessarNotas, adicionarNota: adicionarNota, removerNota: removerNota }
+module.exports = { acessarNotas: acessarNotas, adicionarNota: adicionarNota, removerNota: removerNota, 
+                   listarNotas: listarNotas }
 
 
