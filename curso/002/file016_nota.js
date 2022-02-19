@@ -12,14 +12,14 @@ const acessarNotas = () => {
 const adicionarNota = (titulo, corpo) => {
 
    const notas = carregarNotas()
+     
+   const notaDuplicada = notas.find((nota) => nota.titulo === titulo)
    
-   const notasDuplicadas = notas.filter((nota) => {
-      return nota.titulo === titulo
-   })
-         
-   if (notasDuplicadas.length === 0) {
+   
+   if (!notaDuplicada) {
       notas.push({ titulo: titulo, corpo: corpo })
       
+      salvarNotas(notas)
       console.log('nova nota adicionada!')
    }
    else {
@@ -55,17 +55,32 @@ const listarNotas = () => {
    } )
 }
 
+const lerNota = (titulo) => {
+   const notas = carregarNotas()
+   const nota = notas.find((nota) => nota.titulo === titulo)
+
+   if (nota) {
+      console.log(chalk.inverse(nota.titulo))
+      console.log(nota.corpo)
+   }
+   else {
+      console.log(chalk.red.inverse('Nota não encontrada!'))
+   }
+
+   
+}
+
 
 const salvarNotas = (notas) => {
    const dadosJSON = JSON.stringify(notas)
-   fs.writeFileSync('file015notas.json', dadosJSON)
+   fs.writeFileSync('file016notas.json', dadosJSON)
 }
 
 
 const carregarNotas = () => {
 
    try {
-      const dadosBuffer = fs.readFileSync('file015notas.json')
+      const dadosBuffer = fs.readFileSync('file016notas.json')
       const dadosJSON = dadosBuffer.toString()
       return JSON.parse(dadosJSON)
    }
@@ -79,6 +94,6 @@ const carregarNotas = () => {
 
 
 module.exports = { acessarNotas: acessarNotas, adicionarNota: adicionarNota, removerNota: removerNota, 
-                   listarNotas: listarNotas }
+                   listarNotas: listarNotas, lerNota: lerNota }
 
 
